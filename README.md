@@ -1,5 +1,6 @@
 ## DEMO
-[Watch the video demo](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
+[Watch the video demo]()
+[![Watch the video demo](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
 
 ## Setup Instructions
 
