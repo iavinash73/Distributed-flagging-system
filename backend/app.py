@@ -17,8 +17,8 @@ from werkzeug.utils import secure_filename
 from flask_bcrypt import Bcrypt
 from pysyncobj import SyncObj, replicated
 import time
-from pysentimiento.preprocessing import preprocess_tweet
-from pysentimiento import create_analyzer
+#from pysentimiento.preprocessing import preprocess_tweet
+#from pysentimiento import create_analyzer
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///d_flag.db' 
