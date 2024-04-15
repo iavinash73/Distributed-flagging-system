@@ -21,7 +21,7 @@ from pysentimiento.preprocessing import preprocess_tweet
 from pysentimiento import create_analyzer
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///de_flag.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///d_flag.db' 
 app.config['UPLOAD_PATH'] = 'static/posts'
 app.config['SECRET_KEY'] = '3uho2irbfweo14hrufibeqworg1huuf1eb1wouf9823'
 db = SQLAlchemy(app)
