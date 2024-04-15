@@ -243,6 +243,7 @@ class Post(db.Model):
     created_at = db.Column(
         db.DateTime, nullable=False, default=datetime.utcnow
     )
+    username=db.Column(db.String(60), nullable=False)
 
     def __repr__(self):
         return f"<Post {self.title}>"
@@ -522,7 +523,7 @@ def create_post(current_user):
             allow = 0
             db.session.commit()
         else:
-            new_post = Post(title=title, content=filename)
+            new_post = Post(title=title,username=current_user.username, content=filename)
             db.session.add(new_post)
             db.session.commit()
         print(allow)
@@ -545,12 +546,14 @@ def get_posts(current_user):
             "title": post.title,
             "content": post.content,
             "created_at": post.created_at.isoformat(),
+            "username":post.username
         }
         for post in posts
     ]
-
+    print((posts_data))
     return jsonify(posts_data), 200
-
+#@app.route('/get_user', methods=["GET"])
+#def get_user()
 
 @app.route('/')
 def index():
