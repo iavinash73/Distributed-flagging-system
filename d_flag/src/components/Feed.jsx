@@ -124,10 +124,24 @@ export default function Feed() {
         {posts.map((item, index) => (
           <div key={index} className="">
             <div className="text-[20px] font-medium mb-2 ">{item.title}</div>
+            
+  <figure class="relative  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
             <img
               className="w-[100%] h-[300px] object-cover rounded-lg mb-4"
               src={"http://127.0.0.1:5000/static/posts/" + item.content}
-            ></img>
+            >
+              
+
+            </img>
+            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+      <p class="mx-auto font-semibold text-[32px]">Posted by <a href="">{item.username}</a></p>
+  </figcaption>
+            </figure>
+            <div class="text-overlay relative">
+  
+              
+            </div>
+
           </div>
         ))}
       </div>
