@@ -1,0 +1,12 @@
+setuptools==69.0.3
+Flask==3.0.0
+Flask-Bcrypt==1.0.1
+Flask-Cors==4.0.0
+Flask-JWT-Extended==4.6.0
+Flask-Login==0.6.3
+Flask-SQLAlchemy==3.1.1
+itsdangerous==2.1.2
+python-docx==1.1.0
+python-dotenv==1.0.0
+gunicorn==21.2.0
+alembic
