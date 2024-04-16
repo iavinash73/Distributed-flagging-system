@@ -1,12 +1,23 @@
 # Distributed Flagging System
 
+
+<p >
 A secure social media application which uses Distributed Computing to verify if a image a user wants to post is similar to the images given in the reference database. This is achieved using hashing methods
-like Perceptual Hashing, Average hashing, Difference hashing and Median hashing where the hash values are precomputed for reference images in a Database. The uploaded image is then hashed with it's respective hash
-and later verified with the precomputed hashes with Hamming Distance and a threshold for the System to decide whether to vote or not for the given image. If a Quorum exists the image isn't uploaded to the 
+like Perceptual Hashing, Average hashing, Difference hashing and Median hashing where the hash values are precomputed for reference images in a Database.</p>
+<p  >
+The uploaded image is then hashed with it's respective hash
+and later verified with the precomputed hashes with Hamming Distance and a threshold for the System to decide whether to vote or not for the given image. 
+</p>
+<p>    
+If a Quorum exists the image isn't uploaded to the 
 social media and the user is flagged and banned from the application after 2 warnings *(Since this a proof of concept we used Cat Images as the reference image, so you can't post cat images in this server)*. 
+</p>
+
 
 <p align="center" width="100%">
-    <img src="https://github.com/iavinash73/Distributed-flagging-system/blob/main/Output_Images/DemoGIF.gif"></img>
+    <kbd>
+    <img src="https://github.com/iavinash73/Distributed-flagging-system/blob/main/Output_Images/DemoGIF.gif" ></img>
+    </kbd>
 </p>
 
 
