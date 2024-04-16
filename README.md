@@ -9,6 +9,49 @@ social media and the user is flagged and banned from the application after 2 war
     <img src="https://github.com/iavinash73/Distributed-flagging-system/blob/main/Output_Images/DemoGIF.gif"></img>
 </p>
 
+
+## Image Hashing Algorithms
+
+Image Hashing is a fingerprint of a multimedia file derived from various features from its content. Unlike cryptographic hash functions which rely on the avalanche effect of small changes in input leading to drastic changes in the output Here we use Similarity of Images.
+
+Image | Image Hash
+-------|-----------
+<img src="https://github.com/iavinash73/Distributed-flagging-system/assets/92035508/2ecc0787-342a-47e2-b676-02a53cd20be2"></img>|<img src="https://github.com/iavinash73/Distributed-flagging-system/assets/92035508/d55e3078-7b45-4375-99eb-2da38a6c17e7"></img>
+Query Image (Cat) |0xa4ad99b3629076ae
+
+The above is an Example of Image Hashing Where We Query Using an Image and It's Hash is computed on Each Server depending on the algorithm
+
+#### Image Hashing Algorithms
+
+ <ul>
+    <li>Perceptual Hash </li>
+    <li> Average Hash </li>
+       <li> Median Hash </li>
+     <li>Difference Hash</li>
+  </ul> 
+
+### Perceptual Hash 
+Uses <a href="https://en.wikipedia.org/wiki/Discrete_cosine_transform#:~:text=In%20a%20DCT%20algorithm%2C%20an,at%20high%20data%20compression%20ratios."> Discrete Cosine Transform </a>to capture frequencies in the image and 
+Perform hash based on the 8x8 upper-left part of image and set bit to 1 if > mean
+### Median Hash
+Scale Down grayscale Image to 8x8 and compute Median of the values of pixels and set bit to 1 if > median
+### Average Hash
+Compute the average of the pixel values in the image (8x8) without DCT and compute the hash
+### Difference Hash
+After Image Scaling and Gray scaling compute dhash by computing the difference between adjacent pixels and compute hash
+
+## What's the need for Multiple Algorithms?
+Certain Algorithm are not resistant to image augmentation such as Skewing , Cropping , Contrast changes 
+
+Each Algorithm will have a threshold beyond which the algorithm identifies the image as illegal
+so we provide a distributed environment using <a href="https://raft.github.io/">raft consensus protocol</a> where each hash is computed and voted based on its threshold
+ensuring:
+```
+1.Fault Tolerance (Regular Raft Leader Election at select time-intervals)
+2.Reliablity (Multiple Servers' Vote Ensure Reliablity)
+3.Safety 
+```
+
 ## System Voting Architecture
 
 <p align="center" width="100%">
