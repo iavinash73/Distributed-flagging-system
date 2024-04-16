@@ -17,7 +17,7 @@ social media and the user is flagged and banned from the application after 2 war
 
 * Multiple P-Hash Implementation Servers are initialized using PySyncObj and the class is replicated at an IP Address and a Port.
 * They all communicate with each other with Raft Protocol and with Reference values in DB they check if a post is simialar to the reference hashes
-* Upon Quorum **(Equivalent to [ floor(Alive_Servers / 2) + 1 ] )** if majority of alive servers voted the image to be similar then the user is flagged and image isn't posted else it is posted.
+* Upon Quorum **(Equivalent to [floor(Alive_Servers / 2) + 1])** if majority of alive servers voted the image to be similar then the user is flagged and image isn't posted else it is posted.
 ## Software Tech Stack
 
 <p align="center">
