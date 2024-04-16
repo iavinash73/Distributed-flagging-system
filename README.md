@@ -10,7 +10,7 @@ and later verified with the precomputed hashes with Hamming Distance and a thres
 </p>
 <p>    
 If a Quorum exists the image isn't uploaded to the 
-social media and the user is flagged and banned from the application after 2 warnings *(Since this a proof of concept we used Cat Images as the reference image, so you can't post cat images in this server)*. 
+social media and the user is flagged and banned from the application after 2 warnings <em>(Since this a proof of concept we used Cat Images as the reference image, so you can't post cat images in this server).</em> 
 </p>
 
 
