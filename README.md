@@ -22,7 +22,7 @@ social media and the user is flagged and banned from the application after 2 war
   </a>
 </p>
 
-* **ReactJs, TailwindCSS & Javascript: ** Used for the frontend of the Social Media Application (Triple A)
+* **ReactJs, TailwindCSS & Javascript:** Used for the frontend of the Social Media Application (Triple A)
 * **Python & Flask:** Programming Language and Micro Web Framework used for the Backend
 * 
 
