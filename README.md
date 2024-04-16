@@ -14,6 +14,9 @@ social media and the user is flagged and banned from the application after 2 war
     <img src="https://github.com/iavinash73/Distributed-flagging-system/blob/main/Output_Images/system.png"></img>
 </p>
 
+* Multiple P-Hash Implementation Servers are initialized using PySyncObj and the class is replicated at an IP Address and a Port.
+* They all communicate with each other with Raft Protocol and with Reference values in DB they check if a post is simialar to the reference hashes
+* Upon Quorum **(which is equivalent to [ floor(Alive_Servers / 2) + 1 ] )** if majority of alive servers voted the image to be similar then the user is flagged and image isn't posted else it is posted.
 ## Software Tech Stack
 
 <p align="center">
@@ -27,48 +30,53 @@ social media and the user is flagged and banned from the application after 2 war
 * **Toaster:** Used for Notifications on successful post, warning for innapropriate post and being banned.
 * **Python & Flask:** Programming Language and Micro Web Framework used for the Backend.
 * **PySyncObj:** A framework to replicate classes on different IP Addresses & Ports ensuring consensus using RAFT Protocol.
-* **SQLite:** Storing the URL for the image posts and user information.
+* **SQLite:** Storing the URL for the image posts, user information and reference hashes for each P-hash Implementation.
 
-## DEMO
-[Demo video](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
+#### You can check out the immplementation here: [Demo video](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
+
+## Make it Work for your Use Case:
+* The DB is initialized with the reference hash of the reference images which is set up here: [Reference DB Images](https://github.com/iavinash73/Distributed-flagging-system/tree/main/backend/static/images)
+* Upon server being activated the reference hashes are calculated, so put the reference images you want instead if you want to block a specific type of content.
+* You can initialize any number of servers (This implementation we initialized 4 Servers) with varying hashes and thresholds.
+* A distributed system is more trustworthy but is also slower hence give enough time in between server initializations and voting time for better efficiency **( use time.sleep() in backend for this )**.
 
 ## Setup Instructions
 
 ### Backend Setup
-1. Navigate to the `backend` directory.
-2. Create a virtual environment:
+1. **Navigate to the `backend` directory.**
+2. **Create a virtual environment:**
     ```bash
     python3 -m venv venv
     ```
-3. Activate the virtual environment:
+3. **Activate the virtual environment:**
     - On Windows:
         ```bash
-        venv\Scripts\activate
+        > venv\Scripts\activate
         ```
     - On macOS and Linux:
         ```bash
-        source venv/bin/activate
+        > source venv/bin/activate
         ```
-4. Install dependencies:
+4. **Install dependencies:**
     ```bash
-    pip install -r requirements.txt
+    > pip install -r requirements.txt
     ```
-5. Set up the database:
+5. **Set up the database:**
     - Modify the `config.py` file to specify your database configuration.
-6. Start the Flask server:
+6. **Start the Flask server:**
     ```bash
-    flask run
+    > flask run
     ```
 
 ### Frontend Setup
 1. Navigate to the `d_flag` directory.
 2. Install dependencies:
     ```bash
-    npm install
+    > npm install
     ```
 3. Start the React development server:
     ```bash
-    npm start
+    > npm start
     ```
 
 ## Usage
@@ -79,3 +87,9 @@ social media and the user is flagged and banned from the application after 2 war
 ## Folder Structure
 - `backend`: Contains the Flask backend code.
 - `d_flag`: Contains the React frontend code.
+
+## Authors
+* [Ajay Badrinath](https://github.com/AjayBadrinath)
+* [Abhijith Ajith](https://github.com/AAbhijthA)
+* [Avinash PR](https://github.com/iavinash73)
+
