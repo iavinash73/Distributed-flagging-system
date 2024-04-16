@@ -12,7 +12,7 @@ social media and the user is flagged and banned from the application after 2 war
 
 ## Image Hashing Algorithms
 
-Image Hashing is a fingerprint of a multimedia file derived from various features from its content. Unlike cryptographic hash functions which rely on the avalanche effect of small changes in input leading to drastic changes in the output Here we use Similarity of Images.
+Image Hashing is a fingerprint of a multimedia file derived from various features from its content. Unlike cryptographic hash functions which rely on the avalanche effect of small changes in input leading to drastic changes in the output here we use Similarity of Images.
 
 Image | Image Hash
 -------|-----------
@@ -21,13 +21,13 @@ Query Image (Cat) |0xa4ad99b3629076ae
 
 The above is an Example of Image Hashing Where We Query Using an Image and It's Hash is computed on Each Server depending on the algorithm
 
-#### Image Hashing Algorithms
+### Image Hashing Algorithms Implemented
 
  <ul>
     <li>Perceptual Hash </li>
-    <li> Average Hash </li>
-       <li> Median Hash </li>
-     <li>Difference Hash</li>
+    <li>Average Hash </li>
+    <li>Median Hash </li>
+    <li>Difference Hash</li>
   </ul> 
 
 ### Perceptual Hash 
