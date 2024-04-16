@@ -16,7 +16,15 @@ social media and the user is flagged and banned from the application after 2 war
 
 ## Software Tech Stack
 
-[![Tech Stack](https://skillicons.dev/icons?i=react,js,tailwind,py,flask,sqlite)](https://skillicons.dev)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,js,tailwind,py,flask,sqlite" />
+  </a>
+</p>
+
+* **ReactJs, TailwindCSS & Javascript: ** Used for the frontend of the Social Media Application (Triple A)
+* **Python & Flask:** Programming Language and Micro Web Framework used for the Backend
+* 
 
 ## DEMO
 [Demo video](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
