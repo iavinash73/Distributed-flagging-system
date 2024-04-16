@@ -35,6 +35,14 @@ social media and the user is flagged and banned from the application after 2 war
 
 #### You can check out the immplementation here: [Demo video](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
 
+## Replicated Classes and Types:
+**The following is the type initilization for the HashServer Class in Backend:**
+* ***(Note: Ensure this is the number mapping to server creation otherwise the comparison and hash retrieval will be wrong)***
+* Server type 1 is for Average Hash
+* Server type 2 is for Difference Hash
+* Server type 3 is for Perceptual Hash
+* Server type 4 is for Median Hash
+   
 ## Make it Work for your Use Case:
 * The DB is initialized with the reference hash of the reference images which is set up here: [Reference DB Images](https://github.com/iavinash73/Distributed-flagging-system/tree/main/backend/static/images)
 * Upon server being activated the reference hashes are calculated, so put the reference images you want instead if you want to block a specific type of content.
