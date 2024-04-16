@@ -4,6 +4,10 @@ like Perceptual Hashing, Average hashing, Difference hashing and Median hashing 
 and later verified with the precomputed hashes with Hamming Distance and a threshold for the System to decide whether to vote or not for the given image. If a Quorum existsthe image isn't uploaded to the 
 social media and the user is flagged and banned from the application after 2 warnings.
 
+<p align="center" width="100%">
+    <img src=""></img>
+</p>
+
 ## DEMO
 [Demo video](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
 
