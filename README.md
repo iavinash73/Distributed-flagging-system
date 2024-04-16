@@ -5,8 +5,18 @@ and later verified with the precomputed hashes with Hamming Distance and a thres
 social media and the user is flagged and banned from the application after 2 warnings.
 
 <p align="center" width="100%">
-    <img src=""></img>
+    <img src="https://github.com/iavinash73/Distributed-flagging-system/blob/main/Output_Images/DemoGIF.gif"></img>
 </p>
+
+## System Voting Architecture
+
+<p align="center" width="100%">
+    <img src="https://github.com/iavinash73/Distributed-flagging-system/blob/main/Output_Images/system.png"></img>
+</p>
+
+## Software Tech Stack
+
+[![Tech Stack](https://skillicons.dev/icons?i=react,js,tailwind,py,flask,sqlite)](https://skillicons.dev)
 
 ## DEMO
 [Demo video](https://drive.google.com/file/d/14da6duvrd4muRqXoQK2q86zfd9yDjE0j/view?usp=sharing)
